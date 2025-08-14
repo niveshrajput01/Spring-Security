@@ -63,6 +63,7 @@ public class UserController {
         return optionalCustomer.orElse(null);
     }
 
+    // Login DTO
     @PostMapping("/apiLogin")
     public ResponseEntity<LoginResponseDTO> apiLogin (@RequestBody LoginRequestDTO loginRequest) {
         String jwt = "";
