@@ -30,11 +30,9 @@ public class Customer {
 
     private String role;
 
-    // Does not need in response
     @Column(name = "create_dt")
     @JsonIgnore
     private Date createDt;
-
 
     @OneToMany(mappedBy = "customer", fetch = FetchType.EAGER)
     @JsonIgnore
